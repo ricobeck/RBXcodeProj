@@ -1,36 +1,33 @@
 //
-//  RBXcodeProjTests.swift
-//  RBXcodeProjTests
+//  XcodeProjectTests.swift
+//  RBXcodeProj
 //
-//  Created by rick on 12/11/15.
-//  Copyright © 2015 KF Interactive GmbH. All rights reserved.
+//  Created by rick on 07/04/15.
+//  Copyright (c) 2015 ricobeck. All rights reserved.
 //
 
+import Cocoa
 import XCTest
-@testable import RBXcodeProj
+import RBXcodeProj
 
-class RBXcodeProjTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+class XcodeProjectTests: XCTestCase {
+
+    func testThatParsedObjectCountMatches() {
+        
+        let projectFileURL = NSBundle(forClass: self.dynamicType).URLForResource("iOSProjectSwift/iOSProjectSwift", withExtension: "xcodeproj")!
+        if let project = RBXcodeProject(path: projectFileURL.path!) {
+            project.parse()
+            
+            XCTAssert(project.objects.count == 16, "Expected number of objects in project did not match (\(project.objects.count)")
+            guard let variantGroups = project.variantGroups else {
+                XCTFail("Project has variant groups")
+                return
+            }
+            XCTAssert(variantGroups.count == 2, "Expected number of variant groups in project did not match (\(variantGroups.count)")
+            
+        } else {
+            XCTFail("could not locate test project at \(projectFileURL)")
         }
     }
-    
+
 }

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>RBXcodeProj.xcscheme_^#shared#^_</key>
+		<key>iOSProjectSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D3EA28A1BF5202500816083</key>
+		<key>1D3EA2B91BF5375A00816083</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D3EA2941BF5202500816083</key>
+		<key>1D3EA2CD1BF5375B00816083</key>
 		<dict>
 			<key>primary</key>
 			<true/>

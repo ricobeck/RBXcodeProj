@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3EA28F1BF5202500816083 /* RBXcodeProj.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D3EA28E1BF5202500816083 /* RBXcodeProj.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D3EA2961BF5202500816083 /* RBXcodeProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3EA28B1BF5202500816083 /* RBXcodeProj.framework */; };
 		1D3EA29B1BF5202500816083 /* RBXcodeProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3EA29A1BF5202500816083 /* RBXcodeProjTests.swift */; };
+		1D3EA2A81BF5216500816083 /* XcodeProj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3EA2A51BF5216500816083 /* XcodeProj.swift */; };
+		1D3EA2AA1BF5216500816083 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3EA2A71BF5216500816083 /* String+Regex.swift */; };
+		1D3EA2DE1BF5378700816083 /* iOSProjectSwift in Resources */ = {isa = PBXBuildFile; fileRef = 1D3EA2DD1BF5378700816083 /* iOSProjectSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,13 @@
 
 /* Begin PBXFileReference section */
 		1D3EA28B1BF5202500816083 /* RBXcodeProj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBXcodeProj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D3EA28E1BF5202500816083 /* RBXcodeProj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBXcodeProj.h; sourceTree = "<group>"; };
 		1D3EA2901BF5202500816083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3EA2951BF5202500816083 /* RBXcodeProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBXcodeProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3EA29A1BF5202500816083 /* RBXcodeProjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBXcodeProjTests.swift; sourceTree = "<group>"; };
 		1D3EA29C1BF5202500816083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D3EA2A51BF5216500816083 /* XcodeProj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeProj.swift; sourceTree = "<group>"; };
+		1D3EA2A71BF5216500816083 /* String+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		1D3EA2DD1BF5378700816083 /* iOSProjectSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iOSProjectSwift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,8 @@
 		1D3EA28D1BF5202500816083 /* RBXcodeProj */ = {
 			isa = PBXGroup;
 			children = (
-				1D3EA28E1BF5202500816083 /* RBXcodeProj.h */,
+				1D3EA2A51BF5216500816083 /* XcodeProj.swift */,
+				1D3EA2A71BF5216500816083 /* String+Regex.swift */,
 				1D3EA2901BF5202500816083 /* Info.plist */,
 			);
 			path = RBXcodeProj;
@@ -82,6 +87,7 @@
 			children = (
 				1D3EA29A1BF5202500816083 /* RBXcodeProjTests.swift */,
 				1D3EA29C1BF5202500816083 /* Info.plist */,
+				1D3EA2DD1BF5378700816083 /* iOSProjectSwift */,
 			);
 			path = RBXcodeProjTests;
 			sourceTree = "<group>";
@@ -93,7 +99,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3EA28F1BF5202500816083 /* RBXcodeProj.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +147,10 @@
 		1D3EA2821BF5202500816083 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "KF Interactive GmbH";
+				ORGANIZATIONNAME = ricobeck;
 				TargetAttributes = {
 					1D3EA28A1BF5202500816083 = {
 						CreatedOnToolsVersion = 7.1;
@@ -184,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3EA2DE1BF5378700816083 /* iOSProjectSwift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3EA2A81BF5216500816083 /* XcodeProj.swift in Sources */,
+				1D3EA2AA1BF5216500816083 /* String+Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +314,7 @@
 		1D3EA2A01BF5202500816083 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -317,12 +327,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricobeck.dt.RBXcodeProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1D3EA2A11BF5202500816083 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
